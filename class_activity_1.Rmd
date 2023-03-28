@@ -23,6 +23,27 @@ knitr::opts_chunk$set(echo = TRUE,
 library(credentials) # to help with PAT access
 library(gitcreds)
 library(usethis)
+
+
+# step 1
+#usethis::use_git_config(user.name = "deepbas", user.email = "deepbas99@gmail.com")
+
+
+# step 2
+# usethis::create_github_token()
+
+# step 3
+# if this is the second/subsequent iteration start from here
+gitcreds::gitcreds_set()
+
+# verify
+gitcreds::gitcreds_get()
+
+# make a new repo
+usethis::use_git()
+usethis::use_github()
+
+
 ```
 
 
