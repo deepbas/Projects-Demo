@@ -19,6 +19,13 @@ knitr::opts_chunk$set(echo = TRUE,
 ```
 
 
+```{r}
+library(credentials) # to help with PAT access
+library(gitcreds)
+library(usethis)
+```
+
+
 The `R` package `babynames` provides data about the popularity of individual baby names from the US Social Security Administration. Data includes all names used at least 5 times in a year beginning in 1880.
 
 ```{r}
